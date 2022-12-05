@@ -8482,11 +8482,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Desktop\\AlluP_ASP.NetCoreWithMVC-master\\Allup\\Allup.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Desktop\\Code Academy homeworks\\AlluP_ASP.NetCoreWithMVC-master\\Allup\\Allup.csproj",
       "projectName": "Allup",
-      "projectPath": "C:\\Users\\HP\\Desktop\\AlluP_ASP.NetCoreWithMVC-master\\Allup\\Allup.csproj",
+      "projectPath": "C:\\Users\\HP\\Desktop\\Code Academy homeworks\\AlluP_ASP.NetCoreWithMVC-master\\Allup\\Allup.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Desktop\\AlluP_ASP.NetCoreWithMVC-master\\Allup\\obj\\",
+      "outputPath": "C:\\Users\\HP\\Desktop\\Code Academy homeworks\\AlluP_ASP.NetCoreWithMVC-master\\Allup\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

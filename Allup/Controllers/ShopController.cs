@@ -19,12 +19,8 @@ namespace Allup.Controllers
         }
        public async Task<IActionResult> Search(int? id, string text)
         {
-            IEnumerable<Product> products =
-                await _context.Products
-                   .Where(
-                    p => p.Id !=null ? p.CategoryId == id : true ||
-                p.Title.ToLower().Contains(text.ToLower()) ||
-                p.Brand.Name.ToLower().Contains(text.ToLower())
+            IEnumerable<Product> products = await _context.Products.Where(p => p.Id !=null ? p.CategoryId == id : true ||
+                p.Title.ToLower().Contains(text.ToLower()) || p.Brand.Name.ToLower().Contains(text.ToLower())
                 ).ToListAsync();
 
             List<ProductListVM> productListVMs = new List<ProductListVM>();
@@ -38,23 +34,6 @@ namespace Allup.Controllers
                 };
             productListVMs.Add(productListVM);
             }
-            //if (id != null)
-            //{
-            //   products=  await _context.Products
-            //       .Where(
-            //        p => p.CategoryId == id ||
-            //    p.Title.ToLower().Contains(text.ToLower()) ||
-            //    p.Brand.Name.ToLower().Contains(text.ToLower())
-            //    ).ToListAsync();
-            //}
-            //else
-            //{
-            //  products=   await _context.Products.
-            //        Where(
-            //    p=>p.Title.ToLower().Contains(text.ToLower()) ||
-            //    p.Brand.Name.ToLower().Contains(text.ToLower())
-            //    ).ToListAsync();
-            //}
             return Json(products);
         }
     }
